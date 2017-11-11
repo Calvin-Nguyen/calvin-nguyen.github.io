@@ -1,6 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
 @import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
 
+@media only screen and (min-width: 800px) {
+
+	nav ul li { display: inline; }
+	nav ul li a {margin: 3.0em 10em 0em 0;}
+}
+
 body {
 
 	background-color: #DBD5BC;
@@ -21,18 +27,21 @@ h1{
 
 }
 
-nav ul li{ display: inline; }
 nav ul li a{
 
 	font-family: 'Press Start 2P', cursive;
 	font-size: 1.0em;
 	padding: 0.0em 0.25em;
-	margin: 3.0em 10em 0em 0;
+	margin: 0em 3.0em 0em 0;
 	border-radius: 8px;
 	color: #2B2A2A;
 
 }
 
+li {
+	margin: 0.5em 0.5em 0 0;
+	list-style-type: none;
+}
 
 p {
 
@@ -40,10 +49,64 @@ p {
 	font-size: 1.00em;
 	line-height: 2.0em;
 	color: #2B2A2A;
-	margin: 3.0em 0 5.0em 2.0em;
+	margin: 2.0em 0 5.0em 2.0em;
 
 }
 
-@media screen and (max-width: 959px) {
+/* stuff thanks to Peter Nguyen on codepen.io for collapsing sections*/
+input {
+  display: none;
+  visibility: hidden;
+}
+
+label {
+  display: block;
+  padding: 0.5em;
+  background: #2B2A2A;
+  border-bottom: 1px solid #2B2A2A;
+  color: #DBD5BC;
+}
+
+label:hover {
+  color: #f08080;
+}
+
+label::before {
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  font-size: 0.75em;
+  color: #DBD5BC;
+  content: "+";
+  display: inline-block;
+  width: 2.0em;
+  height: 2.0em;
+  margin-right: 3px;
+}
+
+#expand {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+  background: #DBD5BC;
+  color: #DBD5BC;
+  border: 0.10em solid #2B2A2A;
+}
+
+section {
+  padding: 0 0.1em;
+}
+
+#toggle:checked ~ #expand {
+  height: 10em;
+}
+
+#toggle:checked ~ label::before {
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  font-size: 0.75em;
+  color: #DBD5BC;
+  content: "-";
+}
+/* end collapsing sections*/
 
 }
