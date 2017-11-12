@@ -4,14 +4,14 @@
 @media only screen and (min-width: 800px) {
 
 	nav ul li { display: inline; }
-	nav ul li a {margin: 3.0em 10em 0em 0;}
+
 }
 
 body {
 
 	background-color: #DBD5BC;
-/*	background-image: url("background1.png");
-	background-repeat: repeat;*/
+	padding: 0 1.0em 1.0em 1.0em;
+	margin: 1.0em 1.0em 1.0em 1.0em;
 
 }
 
@@ -19,11 +19,10 @@ h1{
 
 	font-family: 'Roboto Mono', monospace;
 	font-size: 2.5em;
-	color: #2B2A2A;
 	font-weight: bold;
-	line-height: 0.75em;
+	color: #2B2A2A;
+	line-height: 1.0em;
 	text-shadow: 3px 1px #f08080, -2px -1px cyan;
-	margin-left: 1.0em;
 
 }
 
@@ -31,82 +30,96 @@ nav ul li a{
 
 	font-family: 'Press Start 2P', cursive;
 	font-size: 1.0em;
-	padding: 0.0em 0.25em;
-	margin: 0em 3.0em 0em 0;
-	border-radius: 8px;
+	margin: 0em 3.0em 0.5em 0;
 	color: #2B2A2A;
 
 }
 
 li {
-	margin: 0.5em 0.5em 0 0;
+	margin: 0 5.0em 0 0;
 	list-style-type: none;
 }
 
 p {
 
 	font-family: 'Roboto Mono', monospace;
-	font-size: 1.00em;
-	line-height: 2.0em;
+	font-size: 1.0em;
+	line-height: 1.5em;
 	color: #2B2A2A;
-	margin: 2.0em 0 5.0em 2.0em;
+	margin: 2.0em 0 2.0em 0.5em;
 
 }
 
-/* stuff thanks to Peter Nguyen on codepen.io for collapsing sections*/
-input {
-  display: none;
-  visibility: hidden;
+/* CSS for accordion layout for "work" section thanks to w3c Schools */
+
+/*button styling*/
+button.accordion {
+    background-color: #2B2A2A;
+    color: #DBD5BC;
+    cursor: pointer;
+    padding: 1.0em;
+    margin: 0.5em 0.5em 0 0;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+
 }
 
-label {
-  display: block;
-  padding: 0.5em;
-  background: #2B2A2A;
-  border-bottom: 1px solid #2B2A2A;
-  color: #DBD5BC;
+/* background on hover */
+button.accordion:hover {
+    background-color: #f08080;
 }
 
-label:hover {
-  color: #f08080;
+/*panel styling*/
+div.panel {
+    padding: 0 18px;
+    background-color: #DBD5BC;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+
+
+    border: solid;
+    border-width: 0.5px;
+    border-color: #2B2A2A;
 }
 
-label::before {
-  font-family: "Roboto Mono", monospace;
-  font-weight: bold;
-  font-size: 0.75em;
-  color: #DBD5BC;
-  content: "+";
-  display: inline-block;
-  width: 2.0em;
-  height: 2.0em;
-  margin-right: 3px;
+button.accordion:after {
+    content: '+'; /* Unicode character for "plus" sign (+) \02795*/
+    font-size: 1.0em;
+    color: #777;
+    float: right;
+    margin-left: 5px;
 }
 
-#expand {
-  height: 0px;
-  overflow: hidden;
-  transition: height 0.5s;
-  background: #DBD5BC;
-  color: #DBD5BC;
-  border: 0.10em solid #2B2A2A;
+button.accordion.active:after {
+    content: "-"; /* Unicode character for "minus" sign (-) \2796*/
+
 }
 
-section {
-  padding: 0 0.1em;
+/* gallery, also thanks to w3c schools */
+div.gallery {
+    margin: 5px;
+    float: left;
+    width: 180px;
 }
 
-#toggle:checked ~ #expand {
-  height: 10em;
+div.gallery:hover {
+
 }
 
-#toggle:checked ~ label::before {
-  font-family: "Roboto Mono", monospace;
-  font-weight: bold;
-  font-size: 0.75em;
-  color: #DBD5BC;
-  content: "-";
+div.gallery img {
+    width: 100%;
+    height: auto;
 }
-/* end collapsing sections*/
+
+div.desc {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 0.75em;
+    padding: 0.5em;
+    text-align: center;
+}
 
 }

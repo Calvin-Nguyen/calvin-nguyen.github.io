@@ -1,4 +1,4 @@
-$(function()) {
+$(function())
 	if (Modernizr.history) {
 
 	    var newHash      = "",

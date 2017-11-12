@@ -4,11 +4,11 @@
 <head>
 
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type = "text/javascript" src="js/modernizr.js"></script>
-	<script type = "text/javascript" src="js/dynamic.js"></script>
+
 	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0"> 
 	<meta charset = "utf-8">
 
+	<!--favicon head courtesy of realfavicongenerator.net-->
 	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
@@ -38,28 +38,81 @@
 	<div id = "guts">
 		
 		<p>
-		I learned a lot during my time at UCI in studies in interface and interaction design. I'd be more than happy to help you with any questions you have regarding the subject (or any subject really). Here's a collection of the things I've worked on in the past. I've also included skills I've learned along the way.	
+		I learned a lot during my time at UCI through my studies in interface and interaction design. I'd be more than happy to help you with any questions you have regarding the subject (or any subject really).</br></br>
+
+		Below is a collection of the things I've worked on in the past. I've also included some of the skills I've learned along the way.	
 		</p>
-		<input id="toggle" type="checkbox" checked>
+		<!--accordion section thanks to W3C schools-->
 
-		<label for="toggle">[skills]</label>
-		<div id="expand">
-			<section>
-			     <p>//coding: experienced with HTML, CSS, Java, Javascript, and Python</br>
-			        //design: confident with adobe illustrator and photoshop</br>
-			        //misc..: i know how to use aseprite (to make sprites and pixel art), ableton live, github, and unity</br>
-			  	</p>
-		    </section>
-		</div>
+		<!--Panel 1: relevant skills-->
+		<button class="accordion">[skills]</button>
+			<div class="panel">
+				<p>
+					<strong>//coding:</strong> experienced with HTML, CSS, Java, Javascript, and Python</br>
+					<strong>//design:</strong> confident with adobe illustrator and photoshop</br>
+					<strong>//misc&nbsp&nbsp:</strong> i know how to use aseprite (to make sprites and pixel art), ableton live, github, and unity</br>
+				</p>
+			</div>
 
-		<input id="toggle" type="checkbox" checked>
-		<div id="expand">
-			<label for="toggle">[munches]</label>
-		</div>
 
+			<!--Panel 2: projects and volunteer stuff-->
+			<button class="accordion">[projects]</button>
+			<div class="panel">
+				<p>
+					<strong>//hippotime:</strong> volunteer to develop a game being researched at UCI that uses biomedical feedback to teach children breathing exercises</br>
+					<strong>//courses&nbsp&nbsp:</strong> taken courses in project management, software engineering, quality assurance, CSCW, and game development</br>
+					<strong>//othello&nbsp&nbsp:</strong> made a python version of the board game, othello using 2D lists and the python tkinter library</br>
+					<strong>//mapquest&nbsp:</strong> traversed and manipulated mapquest's api/json files in python to make a routing program with n stops</br>
+				</p>
+			</div>
+
+
+			<!--Panel 3: gallery with photo elements-->
+			<button class="accordion">[gallery]</button>
+			<div class="panel">
+
+				<div class="gallery">
+				  <a target="_blank" href="assets/personalLogo.png">
+				    <img src="assets/personalLogo.png" alt="personal Logo" width="300" height="200">
+				  </a>
+				  <div class="desc">personal logo</div>
+				</div>
+
+				<div class="gallery">
+				  <a target="_blank" href="assets/Polaroyd_Vagrantes.jpg">
+				    <img src="assets/Polaroyd_Vagrantes.jpg" alt="Fjords" width="300" height="200">
+				  </a>
+				  <div class="desc">mock-up album cover</div>
+				</div>
+
+				<div class="gallery">
+				  <a target="_blank" href="assets/stansberry.jpg">
+				    <img src="assets/stansberry.jpg" alt="Fjords" width="300" height="200">
+				  </a>
+				  <div class="desc">logo for client</div>
+				</div>
+
+				<div class="gallery">
+				  <a target="_blank" href="witch_coat_adjust.jpg">
+				    <img src="assets/witch_coat_adjust.gif" alt="Fjords" width="300" height="200">
+				  </a>
+				  <div class="desc">sprite for game</div>
+				</div>
+
+				<div class="gallery">
+				  <a target="_blank" href="assets/candle.jpg">
+				    <img src="assets/candle.gif" alt="Fjords" width="300" height="200">
+				  </a>
+				  <div class="desc">also sprite for game</div>
+				</div>
+
+			</div>
 	</div>
 
-
 </body>
+
+<script type = "text/javascript" src="js/modernizr.js"></script>
+<script type = "text/javascript" src="js/dynamic.js"></script>
+<script type = "text/javascript" src="js/accordion_script.js"></script>
 
 </html>
