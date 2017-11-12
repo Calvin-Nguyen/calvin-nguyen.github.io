@@ -3,6 +3,7 @@
 
 @media only screen and (min-width: 800px) {
 
+	p{ margin: 2.0em 20.0em 2.0em 0.5em; }
 	nav ul li { display: inline; }
 
 }
@@ -46,7 +47,7 @@ p {
 	font-size: 1.0em;
 	line-height: 1.5em;
 	color: #2B2A2A;
-	margin: 2.0em 0 2.0em 0.5em;
+	margin: 2.0em 2.0em 2.0em 0.5em;
 
 }
 
@@ -67,9 +68,10 @@ button.accordion {
 
 }
 
-/* background on hover */
-button.accordion:hover {
-    background-color: #f08080;
+/* background on active/hover */
+button.accordion.active {
+	box-shadow: 1px 1px #f08080, -2px -1px cyan;
+	text-shadow: 1px 1px #f08080;
 }
 
 /*panel styling*/
