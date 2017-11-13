@@ -54,7 +54,7 @@ p {
 
 }
 
-/* CSS for accordion layout for "work" section thanks to w3c Schools */
+/* CSS for accordion layout for "work" section thanks to w3c Schools https://www.w3schools.com/howto/howto_js_accordion.asp*/
 
 /*button styling*/
 button.accordion {
@@ -105,7 +105,7 @@ button.accordion.active:after {
 
 }
 
-/* gallery, also thanks to w3c schools */
+/* gallery, also thanks to w3c schools https://www.w3schools.com/css/css_image_gallery.asp */
 div.gallery {
 
 	display: block;
