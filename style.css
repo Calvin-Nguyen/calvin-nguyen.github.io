@@ -47,10 +47,10 @@ h2 {
 p {
 
 	font-family: 'Roboto Mono', monospace;
-	font-size: 1.0em;
+	font-size: 0.75em;
 	line-height: 1.5em;
 	color: #2B2A2A;
-	margin: 1.0em 1.0em 1.0em 1.0em;
+	margin: 1.0em 2.0em 1.0em 2.0em;
 
 }
 
@@ -129,35 +129,50 @@ div.desc {
 img {
 
 	display: block;
-	max-width: 75%;
+	max-width: 50%;
 	margin: 0 auto;
 
 }
 
 #candle {
+
 	float: none;
     display: block;
     margin: 0 auto;
+    max-height: 64px;
+    max-width: 64px;
+
+}
+
+#spotify {
+
+	display: block;
+	margin: 0 auto;
+
 }
 
 @media only and (min-width: 550) {
 
 	img {float: left; margin: 0em 1.0em 1.0em 1.0em;}
+	#candle{ max-height: 256px; max-width: 256px; }
 
 }
 
 @media only screen and (min-width: 780px) {
 
 	nav ul li { display: inline; }
+	img {float: left; margin: 0em 1.0em 1.0em 1.0em;}
+	#candle{ max-height: 128px; max-width: 128px; }
 	div.gallery { margin: 5px; float: left; width: 180px; }
 
 }
 
 @media only screen and (min-width: 800px) {
 
-	p { margin: 2.0em 10.0em 2.0em 0.5em; }
-	img { float: left; margin: 0em 1.0em 1.0em 1.0em; }
+	p { font-size: 1.0em; margin: 2.0em 10.0em 2.0em 0.5em; }
+	img { max-width: 100%; float: left; margin: 0em 1.0em 1.0em 1.0em; }
 	nav ul li { display: inline; }
+	#candle{ max-height: 128px; max-width: 128px; }
 	div.gallery { margin: 5px; float: left; width: 180px; }
 
 
@@ -169,7 +184,8 @@ img {
 	h2 { font-size: 2.0em; margin-left: 0.25em;}
 	p { font-size: 1.2em; }
 	div.gallery { margin: 5px; float: left; width: 180px; }
-    img { float: left; margin: 0em 1.0em 1.0em 1.0em; }
+	#candle{ max-height: 128px; max-width: 128px; }
+    img { max-width: 100%; float: left; margin: 0em 1.0em 1.0em 1.0em; }
 
 }
 
