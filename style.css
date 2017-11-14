@@ -154,6 +154,7 @@ img {
 
 }
 
+/*
 @media only and (min-width: 550) {
 
 	img {float: left; margin: 0em 1.0em 1.0em 1.0em;}
@@ -161,7 +162,7 @@ img {
 	#candle{ max-height: 128px; max-width: 128px; }
 
 }
-
+*/
 @media only screen and (min-width: 780px) {
 
 	nav ul li { display: inline; }
