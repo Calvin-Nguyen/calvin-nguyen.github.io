@@ -157,7 +157,8 @@ img {
 @media only and (min-width: 550) {
 
 	img {float: left; margin: 0em 1.0em 1.0em 1.0em;}
-	#candle{ max-height: 256px; max-width: 256px; }
+	p { font-size: 0.75em; }
+	#candle{ max-height: 128px; max-width: 128px; }
 
 }
 
@@ -165,6 +166,7 @@ img {
 
 	nav ul li { display: inline; }
 	img {float: left; margin: 0em 1.0em 1.0em 1.0em;}
+	p { font-size: 0.75em; }
 	#candle{ max-height: 128px; max-width: 128px; }
 	div.gallery { margin: 5px; float: left; width: 180px; }
 
