@@ -74,7 +74,7 @@ button.accordion {
 
 }
 
-/* background on active/hover */
+/* background on active */
 button.accordion.active {
 	box-shadow: 1px 1px #f08080, -2px -1px cyan;
 	background-color: #f08080;
@@ -172,7 +172,7 @@ img {
 
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1024px) {
 
 	p { font-size: 1.0em; margin: 2.0em 10.0em 2.0em 0.5em; }
 	img { max-width: 100%; float: left; margin: 0em 1.0em 1.0em 1.0em; }
@@ -180,11 +180,12 @@ img {
     nav ul li a{ font-size: 1.0em; }
 	#candle{ max-height: 128px; max-width: 128px; float: left; margin-left: 7.0em; }
 	div.gallery { margin: 5px; float: left; width: 180px; }
-
+    button.accordion:hover { box-shadow: 1px 1px #f08080, -2px -1px cyan; background-color: #f08080; }
 
 }
 
-@media only screen and (min-width: 1024px){
+
+@media only screen and (min-width: 1366px){
 
 	h1 { font-size: 3.0em; }
 	h2 { font-size: 2.0em; margin-left: 0.25em;}
@@ -193,6 +194,7 @@ img {
 	div.gallery { margin: 5px; float: left; width: 180px; }
 	#candle{ max-height: 128px; max-width: 128px; float: left; margin-left: 7.0em; }
     img { max-width: 100%; float: left; margin: 0em 1.0em 1.0em 1.0em; }
+    button.accordion:hover { box-shadow: 1px 1px #f08080, -2px -1px cyan; background-color: #f08080; }
 
 }
 
