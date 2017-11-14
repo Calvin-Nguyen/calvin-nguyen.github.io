@@ -167,7 +167,7 @@ img {
 	nav ul li { display: inline; }
 	img {float: left; margin: 0em 1.0em 1.0em 1.0em;}
 	p { font-size: 0.75em; }
-	#candle{ max-height: 128px; max-width: 128px; }
+	#candle{ max-height: 128px; max-width: 128px; float: left; margin-left: 7.0em;}
 	div.gallery { margin: 5px; float: left; width: 180px; }
 
 }
@@ -178,7 +178,7 @@ img {
 	img { max-width: 100%; float: left; margin: 0em 1.0em 1.0em 1.0em; }
 	nav ul li { display: inline; }
     nav ul li a{ font-size: 1.0em; }
-	#candle{ max-height: 128px; max-width: 128px; }
+	#candle{ max-height: 128px; max-width: 128px; float: left; margin-left: 7.0em; }
 	div.gallery { margin: 5px; float: left; width: 180px; }
 
 
@@ -191,7 +191,7 @@ img {
 	p { font-size: 1.2em; }
     nav ul li a{ font-size: 1.0em; }
 	div.gallery { margin: 5px; float: left; width: 180px; }
-	#candle{ max-height: 128px; max-width: 128px; }
+	#candle{ max-height: 128px; max-width: 128px; float: left; margin-left: 7.0em; }
     img { max-width: 100%; float: left; margin: 0em 1.0em 1.0em 1.0em; }
 
 }
