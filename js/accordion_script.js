@@ -1,3 +1,5 @@
+//accordion script courtesy of w3c schools 
+
 var acc = document.getElementsByClassName("accordion");
 var i;
 
